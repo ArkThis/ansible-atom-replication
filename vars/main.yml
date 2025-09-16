@@ -22,3 +22,4 @@ atom_replication_os_packages:
   - "python3-dev"
   - "default-libmysqlclient-dev"
   - "build-essential"
+  - "python3-mysqldb"

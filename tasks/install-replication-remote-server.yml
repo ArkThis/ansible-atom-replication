@@ -28,7 +28,7 @@
   pip:
     name:
       - ansible>=9.2.0
-      - mysqlclient
+      #- mysqlclient
       #version: "4.10"
       #version: "9.2.0
     virtualenv: "{{ atom_replication_ansible_remote_path }}/venv-ansible"
