@@ -6,6 +6,9 @@
   package:
     name: "{{ atom_replication_os_packages }}"
     state: present
+  tags:
+    - "always"
+    - "install-replication"
 
 - name: "Email notification: Define playbook status"
   set_fact:

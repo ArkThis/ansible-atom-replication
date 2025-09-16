@@ -18,3 +18,7 @@ atom_replication_os_packages:
   - "rsync"
   - "tar"
   - "unzip"
+  - "pkg-config"
+  - "python3-dev"
+  - "default-libmysqlclient-dev"
+  - "build-essential"
