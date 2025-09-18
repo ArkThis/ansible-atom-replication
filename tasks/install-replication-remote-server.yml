@@ -87,9 +87,9 @@
     src: "{{ item }}"
     dest: "{{ atom_replication_ansible_remote_path }}/config.yml"
   with_first_found:
+    - "{{ atom_replication_config }}"
     - "host_vars/{{ inventory_hostname }}/{{ atom_replication_config }}"
     - "files/{{ inventory_hostname }}/{{ atom_replication_config }}"
-    - "{{ atom_replication_config }}"
   when:
     - inventory_hostname == atom_replication_ansible_remote_server|string
 
