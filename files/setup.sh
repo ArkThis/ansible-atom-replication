@@ -45,7 +45,7 @@ fi
 
 # TODO: Create user automatically.
 adduser $ANSIBLE_USER
-ssh-copy-id $ANSIBLE_USER@$ATOM_EDIT_HOST_
+ssh-copy-id $ANSIBLE_USER@$ATOM_EDIT_HOST
 ssh-copy-id $ANSIBLE_USER@$ATOM_RO_HOST
 
 echo ""
