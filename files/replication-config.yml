@@ -80,9 +80,8 @@ atom_replication_clipboard_delete_obsolete_items: True
 # Services to be restarted on AtoM read-only host after replication
 atom_replication_ro_nginx_restart_services:
   - "memcached"
-  - "php-7.4fpm"
-  - "atom-worker-ro"
-
+  - "php8.3-fpm"
+  - "atom-worker"
 
 
 # Symfony commands to run on AtoM read-only host after replication
