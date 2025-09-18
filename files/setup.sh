@@ -10,7 +10,7 @@ ANSIBLE_SUDO_ETC="/etc/sudoers.d/$ANSIBLE_USER"
 
 DOMAIN="example.com"
 ATOM_EDIT_HOST="atom-edit.$DOMAIN"
-ATOM_RO_HOST="atom-ro.allhau.$DOMAIN"
+ATOM_RO_HOST="atom-ro.$DOMAIN"
 # ----------------------------------------------
 
 
@@ -47,20 +47,4 @@ fi
 adduser $ANSIBLE_USER
 ssh-copy-id $ANSIBLE_USER@$ATOM_EDIT_HOST
 ssh-copy-id $ANSIBLE_USER@$ATOM_RO_HOST
-
-echo ""
-echo "List and ping hosts for line-check..."
-echo ""
-
-ansible all --list-hosts
-ansible all -m ping
-pause
-
-
-echo ""
-echo "Run the playbook..."
-echo ""
-
-ansible-playbook mgt.replication-aph-role.yml -e atom_replication_ansible_remote_server=atom-edit-server -t install-replication
-pause
 
