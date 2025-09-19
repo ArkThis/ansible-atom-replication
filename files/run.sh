@@ -2,6 +2,12 @@
 
 PLAYBOOK="mgt.replication-aph-role.yml"
 
+echo ""
+echo "Unlock SSH keys and add them to ssh-agent..."
+echo ""
+eval $(ssh-agent)
+ssh-add
+
 
 echo ""
 echo "List and ping hosts for line-check..."

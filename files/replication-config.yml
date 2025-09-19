@@ -60,8 +60,8 @@ atom_replication_ro_path: "/usr/share/nginx/atom"
 # Synchronize baseurl (Optional)
 # Check running: "select value from setting_i18n where id='124';" in both databases
 atom_replication_synchronize_baseurl: True
-atom_replication_edit_dnsname: "https://atom-edit.example.com"
-atom_replication_ro_dnsname: "https://atom-ro.example.com"
+atom_replication_edit_dnsname: "https://atom-edit.allhau.av-rd.com"
+atom_replication_ro_dnsname: "https://atom-ro.allhau.av-rd.com"
 
 # AtoM synchronize uploads and downloads directories with rsync (Optional)
 atom_replication_synchronize_uploads_dir: True
